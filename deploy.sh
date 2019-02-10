@@ -1,6 +1,6 @@
-docker build -t csolorio/multi-client:latest csolorio/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t csolorio/multi-server:latest csolorio/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t csolorio/multi-worker:latest csolorio/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t csolorio/multi-client:latest -t csolorio/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t csolorio/multi-server:latest -t csolorio/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t csolorio/multi-worker:latest -t csolorio/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push csolorio/multi-client:latest
 docker push csolorio/multi-server:latest
